@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Background Video -->
+  <video autoplay muted loop id="bgVideo">
+    <source src="bac.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+    <div class="container">
+        <div class="header">
+            <img src = "https://appworkstechnologies.in/assets/images/portfolio/LearningManagementSystemSoftware.png" alt="LMS Logo" class="logo">
+            <div class="profile">
+                <div class="profile-card">
+                    <div class="profile-card-front">
+                        <span>Aditya Srivastav</span>
+                        <button id="logoutButton">Logout</button>
+                    </div>
+                    <div class="profile-card-back">
+                        <span>Good Luck!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="side-panel">
+            <a href="#" class="active">Dashboard</a>
+            <a href="courses.html">Courses</a>
+            <a href="calendar.html">Calendar</a>
+            <a href="messages.html">Messages</a>
+            <a href="resources.html">Resources</a>
+            <a href="settings.html">Settings</a>
+        </div>
+    
+        <div class="main-content">
+            <div class="section user-progress">
+                <h2>Progress</h2>
+                <div class="progress-bar">
+                    <div style="width: 75%;">75%</div>
+                </div>
+            </div>
+            <div class="section upcoming-tasks tasks">
+                <h2>Upcoming Tasks</h2>
+                <ul>
+                    <li>Assignment 1 - Due 20th July</li>
+                    <li>Quiz 2 - Due 22nd July</li>
+                </ul>
+            </div>
+            <div class="section upcoming-classes classes">
+                <h2>Upcoming Classes</h2>
+                <ul>
+                    <li>Data Science - 19th July</li>
+                    <li>AI Fundamentals - 20th July</li>
+                </ul>
+            </div>
+            <div class="section available-resources resources">
+                <h2>Available Resources</h2>
+                <ul>
+                    <li><a href="https://github.com/AdityaSrivastavDS/Data-Science-Guide">Data Science Complete Guide</a></li>
+                    <li><a href="https://youtu.be/hHjmr_YOqnU?si=uHPy0Aq899cxOujW">Azure AI Fundamentals Video</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

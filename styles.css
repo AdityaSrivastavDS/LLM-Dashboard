@@ -1,0 +1,199 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+}
+#bgVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    background-color: #993979;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    height: 50px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    position: relative;
+    perspective: 1000px;
+}
+
+.profile span {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#logoutButton {
+    background: white;
+    color: #4CAF50;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#logoutButton:hover {
+    background: #ddd;
+}
+
+.side-panel {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    height: calc(100vh - 70px);
+    padding-top: 20px;
+    position: fixed;
+    top: 70px;
+    transition: width 0.3s;
+}
+
+.side-panel a {
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: background 0.3s, color 0.3s;
+}
+
+.side-panel a:hover {
+    background-color: #575757;
+}
+
+.side-panel a.active {
+    background-color: #993979;
+    color: white;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+    transition: margin-left 0.3s, width 0.3s;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+    color: #993979;
+    font-size: 24px;
+}
+
+.progress-bar {
+    background-color: #f3f3f3;
+    border: 1px solid #ddd;
+    height: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.progress-bar div {
+    height: 100%;
+    width: 75%; /* Example progress */
+    background-color: #af4ca2;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: width 0.5s;
+}
+
+.tasks, .classes, .resources {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tasks ul, .classes ul, .resources ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tasks li, .classes li, .resources li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.tasks li:last-child, .classes li:last-child, .resources li:last-child {
+    border-bottom: none;
+}
+
+.resources li a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.resources li a:hover {
+    color: #333;
+}
+
+/* 3D Animation */
+.profile-card {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 1s;
+}
+
+.profile:hover .profile-card {
+    transform: rotateY(180deg);
+}
+
+.profile-card-front, .profile-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.profile-card-back {
+    background-color: #993979;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+}
+
+li{
+    color: #37b13d;
+}
